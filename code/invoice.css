@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.dn {
+    display: none;
+}
+tr ,th,td{
+    border: 1px black solid;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 80px;
+}
+.image-invoice{
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+.image-invoice-detail{
+    width: 600px;
+    margin-top: 20px;
+}
+.Product-size{
+    width: 800px;
+    padding: 10px;
+
+}
+.amount-size{
+    width: 150px;
+}
+.thankyou{
+    padding: 10px;
+}
+.total-row{
+    padding: 10px;
+}
+.customer-address{
+    padding: 10px;
+}
+
+.compant-address{
+    padding: 10px;
+}
+
+.title-invoice{
+    padding: 25px;
+}
+.quantity-size div{
+    text-align: center;
+}
+.amount-size div{
+    text-align: center;
+}
+.total-title{
+    text-align: right;
+}
+.total-no{
+    text-align: center;
+}
+.Product-invoice-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.image-invoice-div{
+    width: 50%;
+}
+.invoice-bts{
+    
+    width: 300px;
+    height: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bts-section{
+    text-align: center;
+}
+
+/* ########################################################## */
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 120px 1fr 140px auto;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0px 10px;
+    background-color: rgb(21, 42, 59);
+    height: 45px;
+    padding-top: 5px;
+    /* position: fixed; */
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 100;
+}
+.logout-bts{
+    border: none;
+    margin-top: 3px;
+    width: 80px;
+    height: 25px;
+    background-color: #ffe815;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 10px black;
+    padding-bottom: 3px;
+    text-decoration: none;
+    
+}
+
+
+.nav-l .titlename {
+        font-size: 20px;
+        line-height: normal;
+        color: white;
+        width: 156px;
+}
+.nav-l span{
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+.searchboxgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 400px;
+    height: 30px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.logout-bts{
+    border: none;
+    width: 80px;
+    height: 25px;
+    background-color: #ffe815;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 10px black;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    padding-top: 2px;
+    font-size: 15px;
+    
+}
+/* .logout-bts:hover{
+    transform: scale(1.06);
+    font-size: 15px;
+} */
+
+.parent-body {
+    margin-top: 45px;
+}
+
+.count-no{
+    color: black;
+    font-weight: 500;
+}
+
+.count {
+    position: absolute;
+    background-color: white;
+    font-size: 13px;
+    width: auto;
+    height: 17px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    left: 108px;
+    right: 0px;
+    top: -5px;
+    border-radius: 3px;
+    max-width: 22px;
+}
+
+.count span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cardgrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto ;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+}
+
+.cardgrid svg {
+    width: 30px;
+    height: 30px;
+    background-color: #ffe815;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+}
+.cardgrid svg:hover{
+    background-color: #dfca13;
+}
+
+.cardgrid h4 {
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 50px;
+    background-color:  rgb(255 232 21);
+    border-radius: 30px;
+}
+::-webkit-scrollbar-track{
+    background-color: #152a3b;
+    
+}

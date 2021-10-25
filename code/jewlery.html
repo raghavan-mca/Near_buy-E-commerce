@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+    
+    
+        <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    
+        
+        <!-- css -->
+    <link href="./e.commerce.css" rel="stylesheet">
+    
+    <title>Shipping page</title>
+</head>
+<body class="body-card">
+    <section class="nav-bar">
+        <div class="nav-l">
+            <h1 class="titlename">NEAR-BUY<span>CHENNAI</span></h1>
+            
+        </div>
+        <div class="dropdown-box">
+            <div class="dropdown">
+                <button class="dropbtn">Select the category</button>
+                <div class="dropdown-content">
+                    <a href="./watch.html">Watches</a>
+                    <a href="./toys.html">Toys</a>
+                    <a href="./jewlery.html" >Jewlery</a>
+                    <a href="./mensdress.html">Men's dress</a>
+                    <a href="./womensderss.html">Women's dress</a>
+                    <a href="./electronics.html">Electronics</a>
+                    <a href="./mobile.html">Mobile</a>
+                    <a href="./storybook.html">Story books</a>
+                    <a href="./grocery.html">Grocery</a>
+                    <a href="./fruits&vegetable.html">Vegetables & Fruits</a>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <a href="./shopdetail.html" class="cardgrid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                </svg>
+            </a>
+
+            <a href="./card.html" class="cardgrid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <div class="count">
+                    <span class="count-no"></span>
+                </div>
+            </a>
+        </div>
+        <div>
+            <div>
+                <button class="logout-bts" id="logout">
+                    Log-out
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <section class="parent-body">
+        <div class="card-main-div">
+            <div class="card-main-div-l">
+                <div class="card-categories-title">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 3H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM9 9H5V5h4v4zm11-6h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 6h-4V5h4v4zm-9 4H4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1zm-1 6H5v-4h4v4zm8-6c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"/></svg>
+                    <h5>CATEGORIES</h5>
+                </div>
+                <div class="card-categories-sec">
+                    <a href="./watch.html">Watches</a>
+                    <a href="./toys.html">Toys</a>
+                    <a href="./jewlery.html" id="card-categories-sechighlight">Jewlery</a>
+                    <a href="./mensdress.html">Men's dress</a>
+                    <a href="./womensderss.html">Women's dress</a>
+                    <a href="./electronics.html">Electronics</a>
+                    <a href="./mobile.html">Mobile</a>
+                    <a href="./storybook.html">Story books</a>
+                    <a href="./grocery.html">Grocery</a>
+                    <a href="./fruits&vegetable.html">Vegetables & Fruits</a>
+                </div>
+            </div>
+            <div class="card-main-div-r">
+                <div>
+                    <img class="cat-img" src="./image/cover/1600122829-150611-2-1.png">
+                </div>
+                <div class="prodectmainjewlery">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="./header.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="./category.js"></script>
+    <script src="./logout.js"></script>
+</body>
+</html>

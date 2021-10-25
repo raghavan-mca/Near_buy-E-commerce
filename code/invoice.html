@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+
+
+    <!-- css -->
+    <link href="./invoice.css" rel="stylesheet">
+
+    
+
+    <title>Invoice</title>
+</head>
+<body>
+    <!-- <section class="nav-bar">
+        <div class="nav-l">
+            <h1 class="titlename">NEAR-BUY<span>CHENNAI</span></h1>
+        </div>
+        <div class="dropdown-box">
+           
+        </div>
+
+        <div>
+            <a href="./shopdetail.html" class="cardgrid">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                </svg>
+            </a>
+
+            <a href="./card.html" class="cardgrid">
+               
+            </a>
+        </div>
+        <div>
+            <div>
+                <button class="logout-bts" id="logout">
+                    Log-out
+                </button>
+            </div>
+        </div>
+
+    </section> -->
+    <section>
+        <table id="invoice">
+            <thead>
+                <tr>
+                    <th class="title-invoice" colspan="3">INVOICE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="compant-address" colspan="2">
+                        <h3>NEAR-BUY</h3>
+                        <p>NO68 Annasalai 4th mainroad</p>
+                        <p>CHENNAI-600002</p>
+                    </td>
+                    <td class="compant-address">
+                        <h5>Contact us</h5>
+                        <p>+919876543210</p>
+                        <p>nearbuy@gmail.com</p>
+                        <p>enqury@gmail.com</p>
+                    </td>
+                </tr>
+                <tr class="customerinfo-invoice">
+                    
+                </tr>
+                <tr>
+                    <th class="Product-size">Product</th>
+                    <th class="quantity-size">quantity</th>
+                    <th class="amount-size">amount</th>
+                </tr>
+            </tbody>
+            <tbody class="prodect-body-main">
+            </tbody>
+            <tbody>
+                <tr>
+                    <td class="total-row" colspan="2">
+                        <div class="total-title">
+                            TOTAL
+                        </div>
+                    </td>
+                    <td class="total-row">
+                        <div class="o-total-no">
+                            
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3" class="thankyou">THANK YOU</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section class="bts-section">
+        <button id="in-btn" class="invoice-bts " onclick="generatepdf()">Downlode Invoice</button>
+        <button id="th-btn" class="invoice-bts dn" onclick="">Thankyou</button>
+
+    </section>
+    <script src="./firebase.js"></script>
+    <script src="./invoice.js"></script>
+    <!-- <script src="./card.js"></script> -->
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.20/jspdf.plugin.autotable.min.js" integrity="sha512-NWK/s2RcUO/6cGrckJAo9313PVqX/cWmWSLIPU4as7H0Xm6mzhcuYrjtxlsmqy8Xt2gmCCQhcENKuX+R4Il/OA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.2/pdfmake.min.js" integrity="sha512-Yf733gmgLgGUo+VfWq4r5HAEaxftvuTes86bKvwTpqOY3oH0hHKtX/9FfKYUcpaxeBJxeXvcN4EY3J6fnmc9cA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</body>
+</html>

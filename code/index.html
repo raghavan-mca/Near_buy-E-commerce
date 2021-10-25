@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- firebase -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="./sign-inpage.css">
+
+
+    <title>registration page</title>
+</head>
+<body>
+    <section class="register">
+        <div class="register-login">
+            <div class="register-r">
+                <div class="register-r-box">
+                    <h3 class="maintitle">WELCOME TO NEAR-BUY</h3>
+                    <div class="svglogo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                            <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                            <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                          </svg>
+                    </div>
+                    
+                </div>  
+            </div>
+            <div class="register-l">
+                <div class="form-flex">
+                    
+                    <form class="form"  id="signin-form" method="POST"  onclick="return false;">
+                        <h2 class="title">Login</h2>
+                        <label class="form-lable " >E-Mail</label>
+                        <input class="form-input" type="email"id="user-email" name="email" >
+                        <label class="form-lable">PASSWORD</label>
+                        <input class="form-input" type="password" id="user-password" name="password">
+                        <div class="login-bts">
+                            <button class="bts" id="user-button"  >Log-in</button>
+                        </div>
+                        <a class="text" id="forgetpassword">Forgot Password?</a>
+                        <p class="form-create-acc">
+                            Create Account ?
+                             <a  class="text" id="link-redirect">Click here</a>
+                        </p>                   
+                    </form> 
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="./signin.js" ></script>
+    <script src="./firebase.js"></script>
+    
+    
+    
+    
+</body>
+</html>

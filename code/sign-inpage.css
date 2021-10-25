@@ -1,0 +1,158 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+.register{
+  
+    height: 100vh;
+    font-size: 10px;
+    padding: auto;
+    margin: 0px;
+    background-image: linear-gradient(to right, rgb(21, 42, 59), #1b77ff);
+}
+.register-login{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    height: auto;
+    max-width: 75%;
+    margin: auto;
+    padding: 55px;
+    /* background-image: linear-gradient(to right, rgb(32, 32, 66), rgba(255,0,0,1)); */
+    /* border: black 1px solid; */
+
+
+}
+.form-flex{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+.text{
+    text-align: center;
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px;
+    display: block;
+    cursor: pointer; 
+    color: yellow;
+}
+.text:hover{
+    color: white;
+}
+
+.form-create-acc .text {
+    display: inline;
+    color: yellow;
+}
+.form-create-acc .text:hover{
+    color: white;
+}
+
+.form-create-acc {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form{
+    
+    margin: auto;
+    border: 1px black solid;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    
+}
+.register-r-box{
+    padding: 5px 25px;
+    
+}
+.form-lable{
+    margin-left: 5px;
+    display: block;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+    
+}
+.form-lable-signup{
+    font-size: 16px;
+}
+.form-input{
+    
+    width: 300px;
+    height: 27px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 0px 7px;
+    font-size: 16px;
+}
+.form-input:hover{
+    box-shadow: 5px 5px 5px;
+}
+
+.login-bts{
+    /* display: block; */
+    text-align: center;
+    padding: 2px;
+    
+}
+.bts{
+    width: 100px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    padding: 1px 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 35px;
+    margin-top: 10px;
+}
+.bts:hover{
+    background-color: rgb(21, 42, 59);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px black;
+    color: white;
+}
+.createaccount-bts{
+    margin-top: 20px;
+}
+.register-r{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
+}
+
+.register-r h3{
+    text-align: center;
+    margin-top: 20px;      
+}
+.svglogo{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top:30px;
+    opacity: 80%;
+}
+.maintitle{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+/* ###################################################################### */
+
